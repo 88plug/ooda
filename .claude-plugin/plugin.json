@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "ooda",
+  "displayName": "OODA",
+  "description": "Routes any decision, action, or iteration through John Boyd's real OODA loop — Observe (measure, don't assume), Orient (the schwerpunkt: reframe against stale models and bias — the highest-leverage step), Decide (pick one lever as a hypothesis), Act (ship it as a test, re-observe), loop fast. Fires a conditional UserPromptSubmit nudge on decide/act/iterate/plan/compete language, primed at SessionStart. Boyd-faithful: not a 4-box speed circle — Orient dominates, and tempo means unpredictable rhythm that outpaces the problem, not raw haste.",
+  "author": {
+    "name": "88plug",
+    "email": "andrew@88plug.com"
+  },
+  "license": "FSL-1.1-ALv2",
+  "homepage": "https://github.com/88plug/ooda",
+  "repository": "https://github.com/88plug/ooda.git",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "anthropic",
+    "ai",
+    "llm",
+    "ai-agents",
+    "developer-tools",
+    "productivity",
+    "automation",
+    "cli",
+    "claude-code-plugin",
+    "claude-skills",
+    "ooda",
+    "decision-making",
+    "boyd",
+    "tempo",
+    "adaptation",
+    "strategy",
+    "problem-solving",
+    "frameworks"
+  ],
+
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/prime.sh\"", "timeout": 10 }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/nudge.sh\"", "timeout": 10 }
+        ]
+      }
+    ]
+  },
+
+  "skills": "./skills",
+  "commands": "./commands"
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.db
+logs/
+*.bak.*
+# mkdocs build
+site/

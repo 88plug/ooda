@@ -1,0 +1,7 @@
+{
+  "include": [".ci"],
+  "exclude": ["**/__pycache__", "site"],
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": true
+}

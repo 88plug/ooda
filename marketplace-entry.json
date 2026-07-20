@@ -1,0 +1,19 @@
+{
+  "name": "ooda",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/88plug/ooda.git"
+  },
+  "description": "Routes any decision, action, or iteration through John Boyd's real OODA loop — Observe (measure), Orient (the schwerpunkt: reframe against stale models — the highest-leverage step), Decide (one lever, as a hypothesis), Act (ship a test, re-observe), loop fast. Conditional UserPromptSubmit nudge on decide/act/iterate language + SessionStart primer. Boyd-faithful: not a 4-box speed circle; Orient dominates; tempo is rhythm not haste.",
+  "category": "productivity",
+  "tags": [
+    "type:plugin",
+    "ooda",
+    "decision-making",
+    "boyd",
+    "tempo",
+    "adaptation",
+    "strategy"
+  ],
+  "homepage": "https://github.com/88plug/ooda"
+}
