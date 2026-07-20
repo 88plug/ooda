@@ -1,5 +1,3 @@
-<div align="center">
-
 # OODA
 
 **Route any decision or action through John Boyd's real OODA loop — Observe, Orient (the schwerpunkt), Decide, Act, loop fast. Not a 4-box speed circle.**
@@ -10,7 +8,6 @@
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A2BE2?style=flat)](https://github.com/88plug/claude-code-plugins)
 [![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/ooda)
 
-</div>
 
 OODA (Col. John Boyd) is a theory of winning through faster, better adaptation.
 This plugin runs the *real* loop at the moment you decide, act, or iterate — not
